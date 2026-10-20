@@ -1,0 +1,35 @@
+form {
+    margin: 2dvh 0;
+    padding: 2dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background-color: var(--color-background-secondary);
+    border-radius: var(--radius-md);
+}
+
+form input[type="date"],
+form input[type="number"] {
+    margin: 0 1dvh;
+    padding: 0.5dvh 1dvh;
+
+    background-color: var(--color-background-primary);
+    border: none;
+    border-radius: var(--radius-sm);
+
+    outline: none;
+}
+
+form label p {
+    font-size: .8rem;
+    color: var(--color-font-tertiary);
+}
+
+form button {
+    padding: 1dvh;
+
+    background-color: var(--color-background-primary);
+    border: none;
+    border-radius: var(--radius-md);
+}

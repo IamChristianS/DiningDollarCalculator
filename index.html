@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+
+        <title>Dining Dollar Calculator</title>
+
+        <meta property="og:title" content="Dining Dollar Calculator" />
+        <meta property="og:url" content="https://IamChristianS.github.io/DiningDollarCalculator" />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/form.css" />
+    </head>
+    <body>
+        <h2>Dining Dollar Calculator</h2>
+
+        <!-- Inputs -->
+        <form>
+            <label for="dateStart">
+                Start Date
+                <input id="dateStart" type="date" required />
+    
+                <label for="startToday">
+                    Today
+                    <input id="startToday" type="checkbox" />
+                </label>
+            </label>
+    
+            <label for="dateEnd">
+                <p>Sem. 1 ends 12/19/2026 | Sem. 2 ends 05/16/2027</p>
+
+                End Date
+                <input id="dateEnd" type="date" required />
+            </label>
+    
+            <label for="balance">
+                Current Balance
+                <input id="balance" type="number" min="0" step="0.01" placeholder="963.89" required />
+            </label>
+    
+            <label for="countWeekends">
+                Count Weekends
+                <input id="countWeekends" type="checkbox" />
+            </label>
+
+            <label for="countOffDays">
+                Count No-School Days
+                <input id="countOffDays" type="checkbox" />
+            </label>
+    
+            <button id="calculateBtn" type="submit">Calculate</button>
+        </form>
+
+        <!-- Ouput -->
+        <p>You can spend $<span id="amount">___</span> a day before running out of Dining Dollars.</p>
+
+        <script src="js/init.js"></script>
+    </body>
+</html>
