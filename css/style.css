@@ -18,6 +18,8 @@
 
     --border-success: #191;
     --border-fail: #911;
+
+    color-scheme: dark;
 }
 
 * {
