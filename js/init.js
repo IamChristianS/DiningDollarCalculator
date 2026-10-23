@@ -94,10 +94,11 @@ function initCalculate() {
 // Initialize
 (function init() {
     offDays.push(...getDateRange("2026-11-23", "2026-11-27"));
-    offDays.push(...getDateRange("2026-12-11", "2026-12-11"));
+    offDays.push("2026-12-11");
     offDays.push(...getDateRange("2026-12-21", "2027-01-18"));
     offDays.push(...getDateRange("2027-03-29", "2027-04-02"));
-    offDays.push(...getDateRange("2027-05-07", "2027-05-07"));
+    offDays.push("2027-05-07");
+    offDays.push("2027-01-18");
 
     // Initialize
     initStartDate();
